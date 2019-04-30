@@ -4,14 +4,26 @@ public class Usuario {
 
 	private int id;
 	private String nome;
-	
-	public Usuario(String nome) {
-		this(0, nome);
-	}
+	private String sobrenome;
 
+	
+public Usuario (int id){
+	this.id = id;
+}
+public Usuario (String nome) {
+	this.nome = nome;
+}
 	public Usuario(int id, String nome) {
 		this.id = id;
 		this.nome = nome;
+
+
+	}
+	public Usuario(int id, String nome, String sobrenome) {
+		this.id = id;
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+
 	}
 
 	public int getId() {
@@ -22,6 +34,6 @@ public class Usuario {
 		return nome;
 	}
 	
-	
+	public String getSobrenome() {return sobrenome;}
 	
 }

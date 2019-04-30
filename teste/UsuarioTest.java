@@ -20,4 +20,13 @@ public class UsuarioTest {
 
         assertEquals("jeniferTinder", usuario.getNome());
     }
+
+    @Test
+    public void getSobrenome() {
+        Usuario usuario = new Usuario( 1, "jenifer", "Silva");
+        assertNotNull(usuario );
+
+        assertEquals("Silva", usuario.getSobrenome());
+
+    }
 }
